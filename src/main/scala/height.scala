@@ -1,3 +1,5 @@
+// Jack Mulvihill
+
 package edu.luc.cs.laufer.cs371.shapes
 
 // Imports all case constructors from the shape enum into current scope
@@ -5,6 +7,8 @@ import Shape.*
 import com.typesafe.scalalogging.LazyLogging
 
 // Computes the height of the shape tree taking all kinds of shape nodes into consideration
+// Location nodes contribute 1 to height
+// Group nodes contribute 1 + max height of contained shapes
 object height extends LazyLogging:
   def apply(s: Shape): Int =
     logger.debug(s"Computing height for: $s")

@@ -1,10 +1,12 @@
+// Jack Mulvihill
+
 package edu.luc.cs.laufer.cs371.shapes
 
 // Imports all case constructors from the shape enum into current scope
 import Shape.*
 import com.typesafe.scalalogging.LazyLogging
 
-// Computes the axis-aligned bounding box of a shap7
+// Computes the axis-aligned bounding box of a shape
 object boundingBox extends LazyLogging:
   def apply(s: Shape): Location = 
     logger.debug(s"Computing bounding box for: $s")

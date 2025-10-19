@@ -1,3 +1,5 @@
+// Jack Mulvihill
+
 package edu.luc.cs.laufer.cs371.shapes
 
 // Imports all case constructors from the shape enum into current scope
@@ -5,6 +7,9 @@ import Shape.*
 import com.typesafe.scalalogging.LazyLogging
 
 // Recursively scales a shape by a given factor
+// Rectangle and Ellipse dimensions are scaled
+// Location coordinates are scaled and inner shape is scaled
+// Group scales all contained shapes
 object scale extends LazyLogging:
   def apply(s: Shape, factor: Double): Shape =
     logger.debug(s"Scaling shape by factor $factor: $s")

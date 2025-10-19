@@ -1,3 +1,5 @@
+// Jack Mulvihill
+
 package edu.luc.cs.laufer.cs371.shapes
 
 /** data Shape = Rectangle(w, h) | Location(x, y, Shape) */

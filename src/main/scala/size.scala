@@ -1,3 +1,5 @@
+// Jack Mulvihill
+
 package edu.luc.cs.laufer.cs371.shapes
 
 // Imports all case constructors from the shape enum into current scope
@@ -5,6 +7,8 @@ import Shape.*
 import com.typesafe.scalalogging.LazyLogging
 
 // Counts the number of concrete leaf shapes (such as ellipses and rectangles) in a general shape
+// Uses map and sum for Groups
+// Location ndes do not contribute to size
 object size extends LazyLogging:
   def apply(s: Shape): Int =
     logger.debug(s"Computing size for: $s")

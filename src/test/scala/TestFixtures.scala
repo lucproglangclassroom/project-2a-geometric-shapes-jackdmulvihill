@@ -1,3 +1,5 @@
+// Jack Mulvihill
+
 package edu.luc.cs.laufer.cs371.shapes
 
 import Shape.*
