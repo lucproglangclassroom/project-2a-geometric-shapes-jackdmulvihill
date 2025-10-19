@@ -5,6 +5,8 @@ package edu.luc.cs.laufer.cs371.shapes
 import org.scalatest.funsuite.AnyFunSuite
 
 import TestFixtures.*
+
+// Imports all case constructors from the shape enum into current scope
 import Shape.*
 
 class TestSize extends AnyFunSuite:
